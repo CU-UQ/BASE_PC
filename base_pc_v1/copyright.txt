@@ -1,0 +1,3 @@
+Copyright (C) 2017 Jerrad Hampton and Alireza Doostan. Contained code may possess additional/other copyrights. 
+You may use, distribute, and modify this code under the terms of the GPLv3 license received with this file. If 
+not received, please visit https://www.gnu.org/licenses/gpl-3.0.html
