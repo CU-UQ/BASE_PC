@@ -54,7 +54,7 @@ function basis = basis_anisotropic_total_order(basis_opt)
             basis_array_prop(1) = t(1)-1; % First order is t(1)-1
             basis_array_prop(2:d_minus) = t(2:d_minus) - t(1:(d_minus-1)) - 1; % Subsequent orders are t(k) - t(k-1) - 1 Do not need to check higher dimensions until c_ord increased
             basis_array_prop(basis_opt.dim) = basis_opt.dim+c_ord-t(d_minus)-1; % Final entry fills in gap to c_ord
-            if(sum(basis_array_prop./m_ord) <= 1) % If this condition, then valid basis function
+            if(sum(basis_array_prop./m_ord) <= 1.0 + 1e-12)
                 n = n+1;
                 basis_array_prop = basis_array_prop(index);
                 act_dim = find(basis_array_prop~=0);
